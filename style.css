@@ -1,21 +1,99 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    color: #1e1f36;
+}
+.wrapper {
+    padding-top: 8em;
+    background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+    min-height: 100vh;
+}
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    max-height: 31.8em;
+}
+.img-content {
+    position: relative;
+    left: -16em;
+    max-width: 29.4em;
+    width: 100%;
+}
+.main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 2.1em;
+}
+.item{
+    max-width: 23em;
+    width: 140%;
+    border-bottom: 1px solid #e8e8ea;
+    vertical-align: baseline;
+    padding-top: 1em;
+}
 .accordion-title {
-	cursor: pointer;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4b4c5f;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.accordion-title::after {
+    content: url(img/bottom-arrow.svg);
+   display: flex;
+   justify-content: right;
+   align-items: center;
+
+}
+.accordion-title:hover{
+transition:ease-in-out 0.3s;
+color: #F47B56;
+}
+.accordion-title:active{
+    font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+color: #0d14d8;
+}
+.accordion-title:active{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #0c13dd;
+}
+.accordion-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    padding-bottom: 1em;
 }
 
 .accordion-title + .accordion-content {
-	display: none;
+    display: none;
 }
 
 .accordion-title.open + .accordion-content {
-	display: block;
+    display: block;
 }
