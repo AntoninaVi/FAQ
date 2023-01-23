@@ -28,9 +28,9 @@ body {
     padding-top: 8.5em;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
   .wrapper {
-    padding-top: 1em;
+    padding-top: 2em;
   }
 }
 
@@ -62,9 +62,14 @@ body {
     margin-top: 12em;
   }
 }
+@media screen and (max-width: 912px) {
+  .container {
+    margin-top: 2.9em;
+  }
+}
 @media screen and (min-width: 540px) {
   .container {
-    margin-top: -1em;
+    margin-top: -3em;
   }
 }
 @media screen and (max-width: 420px) {
@@ -76,7 +81,7 @@ body {
 }
 @media screen and (max-width: 375px) {
   .container {
-    margin-top: -2em;
+    margin-top: -1em;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
