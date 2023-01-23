@@ -226,6 +226,7 @@ h2.open {
 
 .accordion-text {
   padding-top: 0.6em;
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
