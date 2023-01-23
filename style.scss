@@ -14,11 +14,13 @@ body {
     background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
     min-height: 150vh;
     overflow: hidden;
-
-    @media screen and(max-width: 830px) {
+    @media screen and(min-width: 912px){
+        padding-top: 8em;
+    }
+    @media screen and(max-width: 930px) {
         padding-top: 8.5em;
     }
-    @media screen and(max-width: 320px) {
+    @media screen and(max-width: 380px) {
         padding-top: 1em;
     }
 }
@@ -46,7 +48,7 @@ body {
         margin-top: -3em;
         transform: scale(1);
     }
-    @media screen and(max-width: 325px) {
+    @media screen and(max-width: 375px) {
         margin-top: -2em;
         transform: scale(0.8);
     }
